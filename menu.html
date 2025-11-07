@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASPROSAP - Asociación de Profesionales en Salud y Afines Potosí</title>
+  <style>
+    /* ---------- RESET GENERAL ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.5;
+    }
+
+    /* ---------- ENCABEZADO ---------- */
+    header {
+      text-align: center;
+      background: linear-gradient(to right, #b0f4e6, #e0fff5);
+      padding: 20px 15px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 100px;
+      width: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 60px;
+      color: teal;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    /* ---------- MENÚ DE NAVEGACIÓN ---------- */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      background-color: rgb(187, 255, 232);
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a:hover {
+      background-color: teal;
+      color: white;
+    }
+
+    /* ---------- IMÁGENES ---------- */
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .imagenes img {
+      width: 350px;
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .imagenes img:hover {
+      transform: scale(1.03);
+    }
+
+    /* ---------- PIE DE PÁGINA ---------- */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgb(187, 255, 232);
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    /* ---------- RESPONSIVE DESIGN ---------- */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 42px;
+      }
+
+      header h2 {
+        font-size: 18px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .imagenes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      header h2 {
+        font-size: 16px;
+      }
+
+      nav a {
+        font-size: 15px;
+        padding: 8px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logotipo.jpg" alt="Logotipo ASPROSAP">
+    <h1>ASPROSAP</h1>
+    <h2>Asociación de Profesionales en Salud y Afines - Potosí</h2>
+
+    <nav>
+      <ul>
+        <li><a href="vision.html">Visión y Misión</a></li>
+        <li><a href="programas.html">Programas y Proyectos</a></li>
+        <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <section class="imagenes">
+    <img src="foto1.png" alt="Foto institucional 1">
+    <img src="foto2.png" alt="Foto institucional 2">
+  </section>
+
+  <footer>
+    <li>© 2025 ASPROSAP - Todos los derechos reservados</li>
+    <a href="https://www.facebook.com/share/175JBQJ1A6/"><img src="facebook.png" width="50" height="25"></a>
+    <a href="https://www.tiktok.com/@asprosap?is_from_webapp=1&sender_device=pc"><img src="tiktok.png" width="45" height="25"></a>
+    <a href="https://w.app/q96hcb"><img src="whatshapp.png" width="50" height="30"></a>
+  </footer>
+
+</body>
+</html>
