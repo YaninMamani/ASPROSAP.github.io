@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APROSOP - Médicos Generales</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #f2f6fb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("logotipo.jpg"); /* Cambia por tu logo */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.15; /* Ajusta la transparencia */
+      z-index: -1;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .photo {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      background-color: #d8e7fa;
+    }
+
+    .name-banner {
+      background: linear-gradient(to bottom, #cde1f9, #9cbce7);
+      color: #000;
+      padding: 15px 10px;
+      font-size: 1.05rem;
+      font-weight: bold;
+      border-top: 1px solid #b0c7e3;
+    }
+
+    .title {
+      background: linear-gradient(to bottom, #9cbce7, #7fa6de);
+      color: #000;
+      font-size: 1rem;
+      padding: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .photo {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center; margin-bottom: 20px;">ASOCIACIÓN DE PROFESIONALES EN SALUD Y AFINES POTOSÍ - APROSOP</h2>
+
+  <div class="container">
+    <div class="card">
+      <img src="nogales.jpg" alt="Dra. Nogales Pary Magdhyel Z." class="photo">
+      <div class="name-banner">Dra. Nogales Pary Magdhyel Z.</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="vasquez.jpg" alt="Dr. Vasquez Laime Edwin" class="photo">
+      <div class="name-banner">Dr. Vasquez Laime Edwin</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="delacruz.jpg" alt="Dra. De la Cruz Ayala Sthefany" class="photo">
+      <div class="name-banner">Dra. De la Cruz Ayala Sthefany</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="espinoza.jpg" alt="Dr. Espinoza Montesinos Pablo Andrés" class="photo">
+      <div class="name-banner">Dr. Espinoza Montesinos Pablo Andrés</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="leyton.jpg" alt="Dr. Leyton Vázques Rodrigo" class="photo">
+      <div class="name-banner">Dr. Leyton Vázques Rodrigo</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="orcko.jpg" alt="Dr. Orcko Guachalla José Antonio " class="photo">
+      <div class="name-banner">Dr. Orcko Guachalla José Antonio </div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="garate.jpg" alt="Dra. Garate Albis Sonia Alcira" class="photo">
+      <div class="name-banner">Dra. Garate Albis Sonia Alcira</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="Veliz.jpg" alt="Lic. Veliz Pozo Jesus Francisco" class="photo">
+      <div class="name-banner">Lic. Veliz Pozo Jesus Francisco </div>
+      <div class="title">Licenciado en Trabajo Social</div>
+    </div>
+
+    <div class="card">
+      <img src="campos.jpg" alt="Dr. Campos Mamani Francisco Daniel" class="photo">
+      <div class="name-banner">Dr. Campos Mamani Francisco Daniel</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="molina.png" alt="Dr. Molina Miranda Romel" class="photo">
+      <div class="name-banner">Dr. Molina Miranda Romel</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="callamullo.jpg" alt="Dra. Callamullo Loayza Teresa" class="photo">
+      <div class="name-banner">Dra. Callamullo Loayza Teresa</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="quiroga.jpg" alt="Dra. Quiroga Armijo Erika Jenny" class="photo">
+      <div class="name-banner">Dra. Quiroga Armijo Erika Jenny</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="claure.jpg" alt="Dr. Claure Sempertegui Álvaro" class="photo">
+      <div class="name-banner">Dr. Claure Sempertegui Álvaro</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="vargas.jpg" alt="Dra. Vargas Castro Carmen Eugenia" class="photo">
+      <div class="name-banner">Dra. Vargas Castro Carmen Eugenia</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="oporto.jpg" alt="Dr. Oporto Rodríguez Rodrigo Cristian" class="photo">
+      <div class="name-banner">Dr. Oporto Rodríguez Rodrigo Cristian</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="coronado.jpg" alt="Dr. Coronado Pimentel Rodolfo" class="photo">
+      <div class="name-banner">Dr. Coronado Pimentel Rodolfo</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="torrez.jpg" alt="Dra. Torrez Calderón Gabriela" class="photo">
+      <div class="name-banner">Dra. Torrez Calderón Gabriela</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="carral.jpg" alt="Dra. Caral Huarachi Carla L" class="photo">
+      <div class="name-banner">Dra. Caral Huarachi Carla L</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="ayarachi.jpg" alt="Dr. Ayarachi Cruz Saturnino Hugo" class="photo">
+      <div class="name-banner">Dr. Ayarachi Cruz Saturnino Hugo</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="vargas_tamuri.jpg" alt="Dra. Vargas Tumiri Vivian Karenth" class="photo">
+      <div class="name-banner">Dra. Vargas Tumiri Vivian Karenth</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="quiroga_garcia.jpg" alt="Dra. Quiroga García Jesica Yanina" class="photo">
+      <div class="name-banner">Dra. Quiroga García Jesica Yanina</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="flores.jpg" alt="Dra. Flores Anagua Edelmira" class="photo">
+      <div class="name-banner">Dra. Flores Anagua Edelmira</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="Uño.jpg" alt="Dra. Uño Romay Alejandra" class="photo">
+      <div class="name-banner">Dra. Uño Romay Alejandra</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="ruiz.jpg" alt="Dra. Ruiz Bascope Laura Yadira" class="photo">
+      <div class="name-banner">Dra. Ruiz Bascope Laura Yadira</div>
+      <div class="title">Médico General</div>
+    </div>
+
+    <div class="card">
+      <img src="lopez.jpg" alt="Lic. López Flores Adela Brighith" class="photo">
+      <div class="name-banner">Lic. López Flores Adela Brighith</div>
+      <div class="title">Licenciado en Psicología</div>
+    </div>
+
+    <div class="card">
+      <img src="gonzales.jpg" alt="Lic. Gonzales Tamayo Alan Carlos" class="photo">
+      <div class="name-banner">Lic. Gonzales Tamayo Alan Carlos</div>
+      <div class="title">Licenciado en Psicología</div>
+    </div>
+
+    <div class="card">
+      <img src="margin.jpg" alt="Lic. Marín Regina" class="photo">
+      <div class="name-banner">Lic. Marín Regina</div>
+      <div class="title">Licenciado en Psicología</div>
+    </div>
+
+    <div class="card">
+      <img src="alarcon.jpg" alt="Lic. Alarcón Castro Nicol Karen" class="photo">
+      <div class="name-banner">Lic. Alarcón Castro Nicol Karen</div>
+      <div class="title">Licenciada en Trabajo Social</div>
+    </div>
+
+    <div class="card">
+      <img src="alarcon_castro.jpg" alt="Lic. Alarcón Castro Nicol Wendy" class="photo">
+      <div class="name-banner">Lic. Alarcón Castro Nicol Wendy</div>
+      <div class="title">Licenciada en Trabajo Social</div>
+    </div>
+
+    <div class="card">
+      <img src="ramos.jpg" alt="Lic. Ramos Condori Eduarda" class="photo">
+      <div class="name-banner">Lic. Ramos Condori Eduarda</div>
+      <div class="title">Licenciada en Trabajo Social</div>
+    </div>
+
+    <div class="card">
+      <img src="astoraique.jpg" alt="Lic. Astoraique Paola" class="photo">
+      <div class="name-banner">Lic. Astoraique Paola</div>
+      <div class="title">Licenciada en Trabajo Social</div>
+    </div>
+
+    <div class="card">
+      <img src="tapia.jpg" alt="Lic. Tapia Cabrera Erika V" class="photo">
+      <div class="name-banner">Lic. Tapia Cabrera Erika V</div>
+      <div class="title">Licenciada en Enfermería</div>
+    </div>
+
+    <div class="card">
+      <img src="orta.jpg" alt="Lic. Orta Lizbeth" class="photo">
+      <div class="name-banner">Lic. Orta Lizbeth</div>
+      <div class="title">Licenciada en Enfermería</div>
+    </div>
+
+    <div class="card">
+      <img src="chambi.jpg" alt="Aux. Chambi Ll. Yessica" class="photo">
+      <div class="name-banner">Aux. Chambi Ll. Yessica</div>
+      <div class="title">Auxiliar de Enfermería</div>
+    </div>
+  </div>
+</body>
+</html>

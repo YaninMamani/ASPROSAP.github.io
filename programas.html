@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto ASPROSAP</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #111;
+      line-height: 1.6;
+      background-color: #ffffff;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Fondo del logo ocupando toda la pantalla */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("logotipo.jpg"); /* Cambia por tu logo */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.15; /* Ajusta la transparencia */
+      z-index: -1;
+    }
+
+    /* Contenido a pantalla completa */
+    .content {
+      width: 100%;
+      height: 100%;
+      padding: 5vw; /* Espaciado adaptable a pantalla */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+/* ---------- IMÁGENES ---------- */
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .imagenes img {
+      width: 350px;
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .imagenes img:hover {
+      transform: scale(1.03);
+    }
+    h2 {
+      font-style: italic;
+      color: #000;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      padding-left: 10px;
+    }
+
+    li {
+      text-align: justify;
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        padding: 7vw;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+      li {
+        font-size: 0.95em;
+      }
+    }
+    #texto{
+        position: absolute;
+        left: 33%;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h2>Proyecto de Inserción de equipos multidisciplinarios en unidades educativas</h2>
+    <section class="imagenes">
+    <img src="proyecto1.jpg" alt="Foto institucional 1">
+    <img src="proyecto2.jpg" alt="Foto institucional 2">
+    <img src="proyecto3.jpg" alt="Foto institucional 2">
+    <img src="proyecto4.jpg" alt="Foto institucional 1">
+    <img src="proyecto5.jpg" alt="Foto institucional 2">
+    <img src="proyecto6.jpg" alt="Foto institucional 2">
+  </section>
+    <ul>
+      <li>
+        Tomando en cuenta que se debe realizar una atención en salud con calidad y calidez a toda la población de nuestra ciudad, sin embargo se ha identificado la vulnerabilidad de atención en salud a los estudiantes de las escuelas y colegios de nuestra ciudad y entendiendo que los estudiantes dependen del tiempo y los recursos económicos de los padres, tenemos como resultado una atención de salud demorada y relegada, motivo por el cual ASPROSAP propone insertar un equipo multidisciplinario que consta de un trabajador(a) social, un médico y un psicólogo(a) en cada unidad educativa, para atender de manera inmediata cualquier situación que pueda presentarse a nivel social, médica o psicológica que influya en el rendimiento académico o permanencia de los estudiantes en las escuelas o colegios.
+      </li>
+    </ul>
+
+    <h2>Cursos prácticos de Primeros Auxilios para Maestros</h2>
+    <section class="imagenes">
+    <img src="curso1.jpg" alt="Foto institucional 1">
+    <img src="curso2.jpg" alt="Foto institucional 2">
+    <img src="curso3.jpg" alt="Foto institucional 2">
+    <img src="curso4.jpg" alt="Foto institucional 1">
+    <img src="curso5.jpg" alt="Foto institucional 2">
+    <img src="curso6.jpg" alt="Foto institucional 2">
+  </section>
+    <ul>
+      <li>
+        Al estar presentes en diferentes unidades educativas tanto fiscales como de convenio se pudo identificar que los problemas médicos son desplazados por diferentes motivos y muchas de las enfermedades desencadenan diferentes síntomas como ser: dolor abdominal, dolores de cabeza, desmayos. Así mismo se identificaron enfermedades de larga data como patologías cardíacas o enfermedades hereditarias que demuestran descompensaciones constantes dentro las aulas, por lo cual se ve la necesidad de que los maestros al estar en el aula tengan el conocimiento necesario en primeros auxilios para que puedan actuar de manera inmediata y oportuna en tanto llegara el personal médico para continuar realizando las acciones que correspondan.
+      </li>
+    </ul>
+  </div>
+  <section class="imagenes">
+    <img src="programa1.jpg" alt="Foto institucional 1">
+    <img src="programa2.jpg" alt="Foto institucional 2">
+    <img src="programa3.jpg" alt="Foto institucional 2">
+  </section>
+  <div id="texto">
+    <h1>CAPAÑA DE MEDICION DE LENTES</h1>
+  </div>
+  </div>
+</body>
+</html>

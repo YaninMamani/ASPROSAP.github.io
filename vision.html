@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Misión y Visión — ASPROSAP</title>
+  <style>
+    :root {
+      --accent: #2b5aa1;
+      --text: #111;
+      --paper-bg: #fff;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: var(--paper-bg);
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      overflow-y: auto;
+    }
+
+    /* Fondo fijo con el logotipo */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url('logotipo.jpg'); /* tu logotipo o marca de agua */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60%;
+      opacity: 0.07;
+      filter: grayscale(1);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Contenedor principal (sin borde gris) */
+    .page {
+      width: 100%;
+      min-height: 100vh;
+      padding: 4vw 8vw;
+      box-sizing: border-box;
+      position: relative;
+      overflow: auto;
+      z-index: 1;
+    }
+
+    /* Borde azul interno */
+    .page::before {
+      content: "";
+      position: absolute;
+      top: 1.5vw;
+      left: 1.5vw;
+      right: 1.5vw;
+      bottom: 1.5vw;
+      border: 2px solid var(--accent);
+      pointer-events: none;
+      opacity: 0.9;
+      box-sizing: border-box;
+    }
+
+    h1, h2 {
+      color: var(--accent);
+      text-align: center;
+      margin: 1em 0 0.5em;
+      text-shadow: 0 3px 6px rgba(43,90,161,0.15);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 { font-size: 3vw; }
+    h2 { font-size: 2.5vw; }
+
+    p {
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 1.2vw;
+      max-width: 90%;
+      margin: 0.8em auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 7vw; }
+      h2 { font-size: 6vw; }
+      p { font-size: 4vw; }
+      .page::before {
+        top: 3vw; left: 3vw; right: 3vw; bottom: 3vw;
+      }
+      body::before { background-size: 100%; }
+    }
+    #mision{
+      text-align: center;
+    }
+    #vision{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>Misión</h1>
+    <p>
+      La Asociación de Profesionales en Salud y Afines Potosí tiene como misión brindar atención médica de primera línea ante emergencias y urgencias en los sectores más vulnerables de nuestra jurisdicción, promoviendo acciones de prevención y promoción de la salud en todos los niveles. Nuestro compromiso es garantizar una atención oportuna, solidaria y de calidad, contribuyendo a la reducción de la sobredemanda sanitaria y satisfaciendo las necesidades de la población que más lo requiere.
+    </p>
+<div id="mision">
+  <img src="mision.jpg" width="200" height="200">
+</div>
+    <h2>Visión</h2>
+    <p>
+      Ser una institución referente en la atención médica integral y en la promoción de la salud en Potosí, reconocida por su capacidad de respuesta ante emergencias y su labor en la prevención de enfermedades. Aspiramos a consolidarnos como un pilar de apoyo para los sectores más vulnerables, fortaleciendo el acceso equitativo a los servicios de salud y aportando al bienestar y desarrollo de nuestra comunidad.
+    </p>
+    <div id="vision">
+      <img src="vision.jpg" width="200" height="200">
+    </div>
+  </div>
+</body>
+</html>
